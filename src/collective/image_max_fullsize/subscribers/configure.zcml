@@ -4,8 +4,13 @@
 
   -*- extra stuff goes here -*-
 
-  <subscriber for="plone.dexterity.interfaces.IDexterityContent
-                   zope.lifecycleevent.interfaces.IObjectModifiedEvent"
+  <subscriber for="plone.app.contenttypes.interfaces.IImage
+                   zope.lifecycleevent.IObjectCreatedEvent"
+              handler=".image_scale_down.handler"
+              />
+
+  <subscriber for="plone.app.contenttypes.interfaces.IImage
+                   zope.lifecycleevent.IObjectModifiedEvent"
               handler=".image_scale_down.handler"
               />
 
