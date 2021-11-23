@@ -38,3 +38,5 @@ reports/
 !.gitkeep
 !.travis.yml
 !src/collective
+/venv/share/
+/venv/pyvenv.cfg
