@@ -40,3 +40,6 @@ reports/
 !src/collective
 /venv/share/
 /venv/pyvenv.cfg
+/.coverage.py27-Plone51
+/.coverage.py27-Plone52
+/.coverage.py38-Plone52
