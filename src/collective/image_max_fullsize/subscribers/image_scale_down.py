@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+from plone.app.contenttypes.behaviors.leadimage import ILeadImage
 from plone.app.contenttypes.interfaces import IImage
 from plone.scale.scale import scaleImage
 
@@ -12,7 +13,7 @@ def handler(obj, event=None):
     max_width = 1900
     max_height = 1900
     max_size = 1048576  # 1048576 == 1MB
-    if not IImage.providedBy(obj):
+    if not (IImage.providedBy(obj) or ILeadImage.providedBy(obj)):
         return
 
     if obj.image.size <= max_size:
