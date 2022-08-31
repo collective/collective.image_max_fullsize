@@ -14,5 +14,15 @@
               handler=".image_scale_down.handler"
               />
 
+  <subscriber for="plone.app.contenttypes.behaviors.leadimage.ILeadImage
+                   zope.lifecycleevent.IObjectCreatedEvent"
+              handler=".image_scale_down.handler"
+              />
+
+  <subscriber for="plone.app.contenttypes.behaviors.leadimage.ILeadImage
+                   zope.lifecycleevent.IObjectModifiedEvent"
+              handler=".image_scale_down.handler"
+              />
+
 
 </configure>
