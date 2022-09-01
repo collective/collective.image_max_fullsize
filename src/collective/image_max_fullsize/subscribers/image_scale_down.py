@@ -31,7 +31,7 @@ def handler(obj, event=None):
 
     data = image.data
     result = scaleImage(
-        data, width=max_width, height=max_height, direction="down", quality=90
+        data, width=max_width, height=max_height, mode="scale", quality=90
     )
     image._setData(result[0])
     print("Image scaled down to {0}KB / {1}".format(image.size / 1024, result[2]))
