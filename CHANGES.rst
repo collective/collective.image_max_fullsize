@@ -2,8 +2,8 @@ Changelog
 =========
 
 
-1.0a2 (unreleased)
-------------------
+1.0 (2024-04-04)
+----------------
 
 - support leadimages
   [MrTango]
