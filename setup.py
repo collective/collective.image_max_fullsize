@@ -14,7 +14,7 @@ long_description = '\n\n'.join([
 
 setup(
     name='collective.image_max_fullsize',
-    version='1.0',
+    version='1.1.dev0',
     description="Reduces the size of huge images down a defined maximum, to keep the data base size decent.",
     long_description=long_description,
     # Get more from https://pypi.org/classifiers/
